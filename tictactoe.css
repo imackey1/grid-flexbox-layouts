@@ -1,0 +1,38 @@
+/* ============================================
+   PART 2: TIC-TAC-TOE WITH GRID
+   Author: Ibrahim Mackey
+   ============================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef3fa;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Steps 1-4: activate grid, 3 columns and 3 rows of 100px, 10px gap, center the board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Step 5: design the squares (flexbox centers the X or O inside each cell) */
+#board div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 3px solid #1f4e8c;
+    border-radius: 8px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1f4e8c;
+    transition: background-color 0.2s ease;
+}
+
+#board div:hover {
+    background-color: #ffe9a8;
+}
